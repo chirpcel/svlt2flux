@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "svlt-boot",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "net.mkersten.svlt2flux.svlt.SvltApplication",
+            "projectName": "svlt",
+            "args": "",
+            "envFile": "${workspaceFolder}/svlt/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=51441 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=svlt"
+        },
+        {
+            "type": "java",
+            "name": "flux-boot",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "net.mkersten.svlt2flux.flux.FluxApplication",
+            "projectName": "flux",
+            "args": "",
+            "envFile": "${workspaceFolder}/flux/.env"
+        }
+    ]
+}
